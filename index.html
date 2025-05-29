@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwund Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/c550046c1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body id="top">
+    <!-- Sticky Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo / Name -->
+          <div class="text-xl font-bold text-gray-800">albie</div>
+
+          <!-- Hamburger Button (Mobile) -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-gray-800 focus:outline-none"
+          >
+            <!-- Icon: 3 horizontal lines -->
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Navigation Links (Desktop) -->
+          <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="#skills" class="text-gray-600 hover:text-blue-600"
+              >Skills</a
+            >
+            <a href="#projects" class="text-gray-600 hover:text-blue-600"
+              >Projects</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+            <a href="#resume" class="text-gray-600 hover:text-blue-600"
+              >Resume</a
+            >
+          </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4">
+          <a href="#home" class="block text-gray-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a href="#about" class="block text-gray-600 hover:text-blue-600"
+            >About</a
+          >
+          <a href="#skills" class="block text-gray-600 hover:text-blue-600"
+            >Skills</a
+          >
+          <a href="#projects" class="block text-gray-600 hover:text-blue-600"
+            >Projects</a
+          >
+          <a href="#contact" class="block text-gray-600 hover:text-blue-600"
+            >Contact</a
+          >
+          <a href="#resume" class="block text-gray-600 hover:text-blue-600"
+            >Resume</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Profile Image -->
+    <section
+      id="home"
+      class="h-screen flex items-center justify-center bg-gray-50 px-4"
+    >
+      <div class="text-center">
+        <!-- Profile Image -->
+        <div class="flex justify-center mb-6">
+          <img
+            src="./images/ber.jpeg"
+            alt="albie"
+            class="w-32 h-32 rounded-full object-cover shadow-md"
+          />
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800">
+          Hi, I'm Albie
+        </h1>
+
+        <!-- Title -->
+        <p class="mt-4 text-xl sm:text-2xl text-gray-600">A Web Developer</p>
+
+        <!-- Tagline -->
+        <p class="mt-2 text-md sm:text-lg text-gray-500 max-w-xl mx-auto">
+          I build responsive and accessible websites using modern tools like
+          React, Tailwind CSS, and JavaScript.
+        </p>
+
+        <!-- CTA Button -->
+        <div class="mt-6">
+          <a
+            href="#projects"
+            class="inline-block px-6 py-3 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300"
+          >
+            View Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-white px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          About Me
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed text-center">
+          A Web Developer under training with MEST-AFRICA, with a passion
+          for building clean, responsive, and user-friendly websites. I’ve
+          sharpened my skills in HTML, CSS, Tailwind CSS, JavaScript, and React.
+          I enjoy solving problems, learning new technologies, and turning ideas
+          into real-world applications. Beyond coding, I have a deep❤️
+          appreciation for nature, animals, and life on earth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+          Skills
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Technical Skills -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Technical Skills
+            </h3>
+            <ul class="space-y-2 text-gray-600 list-disc list-inside">
+              <li>HTML & CSS</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript (learning)</li>
+              <li>React.js (learning)</li>
+              <li>Git & GitHub</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Soft Skills
+            </h3>
+            <ul class="space-y-2 text-gray-600 list-disc list-inside">
+              <li>Problem-Solving</li>
+              <li>Teamwork</li>
+              <li>Adaptability</li>
+              <li>Attention to Detail</li>
+              <li>Self-Motivation</li>
+              <li>Time Management</li>
+              <li>Continuous Learning</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+          Projects
+        </h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Project Card -->
+          <div
+            class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              CyberSecurity
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Learn how to protect yourself and your data in the digital world.
+            </p>
+            <p class="text-sm text-gray-500 mb-4">
+              Tech used: HTML, CSS, JavaScript
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://bertojnr.github.io/landing-page/"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Bertojnr/landing-page"
+                class="text-gray-700 hover:underline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Repeat this block for each project -->
+          <div
+            class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Crusty Delight
+            </h3>
+            <p class="text-gray-600 mb-3">Order Your Favourite Pizza Online and get it hot and fresh in minutes</p>
+            <p class="text-sm text-gray-500 mb-4">
+              Tech used: HTML, CSS, Tailwind CSS, JavaScript
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://bertojnr.github.io/crusty/"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Bertojnr/portfolio"
+                class="text-gray-700 hover:underline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Literature Portal
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Level up and take your blogging to new heights!
+            </p>
+            <p class="text-sm text-gray-500 mb-4">
+              Tech used: HTML, CSS, BootStrap, JavaScript
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://literature-portal.vercel.app"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Albie0711/literature-portal"
+                class="text-gray-700 hover:underline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Corso 5 Training
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Lifelong learning is key to personal and professional growth.
+            </p>
+            <p class="text-sm text-gray-500 mb-4">
+              Tech used: HTML, CSS, Bootstrap CSS, JavaScript
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://corso-training-five.vercel.app"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Albie0711/corso-training"
+                class="text-gray-700 hover:underline"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Add Project 3 and 4 here similarly -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Formspree -->
+    <section id="contact" class="py-16 bg-gray-50 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+
+        <p class="text-gray-600 text-lg mb-8">
+          Want to build something or just want to say hello — feel free to reach
+          out!
+        </p>
+
+        <!-- Contact Form -->
+        <form
+          action="https://formspree.io/f/mbllqjjv"
+          method="POST"
+          class="space-y-4"
+        >
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <!-- Resume Download -->
+        <div class="mt-8">
+          <a
+            id="resume"
+            href="./resume.pdf"
+            download
+            class="text-blue-600 hover:underline"
+          >
+            Download Resume →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center"
+      >
+        <p class="text-sm">&copy; 2025 albie</p>
+
+        <!-- Optional social links -->
+        <div class="mt-4 md:mt-0 flex space-x-4">
+          <a href="https://github.com/bertojnr" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/albert-yeboah-34a861367/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#top" class="hover:text-blue-400">Back to Top ↑</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
